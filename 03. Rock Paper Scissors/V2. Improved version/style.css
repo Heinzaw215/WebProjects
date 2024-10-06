@@ -1,0 +1,97 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Main Menu Styling */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Light mode styling */
+.light-mode {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.light-mode button {
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+/* Dark mode styling */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode button {
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+/* Game Section Styling */
+#gameContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 800px; /* Set a max width for the game container */
+    width: 90%;
+}
+
+/* Player and Computer sections */
+#player, #computer {
+    flex: 1; /* Each takes equal space */
+    margin: 0 10px; /* Space between player and computer sections */
+    padding: 10px;
+    border: 2px solid #ccc; /* Border around sections */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* White background for clarity */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#playerInput {
+    margin-top: 10px;
+}
+
+/* Score Section */
+#score {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #gameContainer {
+        flex-direction: column; /* Stack player and computer sections on smaller screens */
+        align-items: center;
+    }
+
+    #player, #computer {
+        margin: 10px 0; /* Space between stacked sections */
+        width: 80%; /* Allow sections to be narrower on small screens */
+    }
+}
