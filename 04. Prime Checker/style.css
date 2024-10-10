@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2d3047, #1b998b); /* Softer gradient */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2); /* Create a layered shadow for depth */
+    text-align: center;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Limit maximum width */
+    transform: translateZ(0); /* Ensure the container has a proper 3D context */
+    transition: transform 0.3s ease; /* Transition effect for hover */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+
+h1 {
+    color: #ff6f61; /* Attractive color for the heading */
+    font-size: 2.5rem; /* Larger heading */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.number-checker {
+    display: flex; /* Use flex for side-by-side layout */
+    align-items: center; /* Center align items */
+    width: 100%;
+}
+
+input[type="number"] {
+    padding: 12px 10px; /* More padding for comfort */
+    flex: 1; /* Make the input field take the remaining space */
+    border: 2px solid #ff6f61; /* Use attractive color for the border */
+    border-radius: 10px; /* Slightly larger border radius */
+    font-size: 1.2rem; /* Increased font size */
+    color: #333; /* Text color */
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+input[type="number"]:focus {
+    border-color: #2d3047;
+    box-shadow: 0 0 5px rgba(29, 127, 152, 0.5); /* Add shadow on focus */
+}
+
+input[type="number"]::placeholder {
+    color: #999; /* Softer placeholder color */
+}
+
+button {
+    padding: 12px 20px; /* Comfortable padding */
+    background-color: #ff6f61; /* Attractive background color */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Consistent radius */
+    font-size: 1.2rem; /* Increased font size */
+    cursor: pointer;
+    margin-left: 10px; /* Add space between input and button */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+button:hover {
+    background-color: #ff4c4c; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #2d3047; /* Result text color */
+    font-weight: bold; /* Bold result text */
+}
