@@ -23,5 +23,5 @@ Our community is dedicated to creating a welcoming environment for everyone. By 
 
 1. **Fork the repository** to your GitHub account.
 2. **Clone your forked repository** to your local machine:
-   ```bash
-   git clone https://github.com/HeinzZaw/WebProjects.git
+   ```bash```
+   git clone <https://github.com/HeinzZaw/WebProjects.git>
