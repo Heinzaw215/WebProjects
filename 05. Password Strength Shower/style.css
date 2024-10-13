@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -27,4 +27,26 @@
     outline: none;
     color: #fff;
     background: transparent;
+}
+
+#strength-meter {
+    height: 10px;
+    width: 100%;
+    background-color: #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#strength-meter div {
+    height: 100%;
+    width: 0;
+    transition: width 0.3s;
+}
+
+#strength-text {
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
 }
