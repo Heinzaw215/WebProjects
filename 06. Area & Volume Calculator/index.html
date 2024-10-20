@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Hein Htet Zaw">
+    <meta name="description" content="Calculating the area of circle triangle and other things.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <legend>
+            <h1>Area Calculator</h1>
+        </legend>
+
+        <div id="CircleInputs" class="input-container">
+            <label for="radius">Radius:</label>
+            <input type="number" id="radius" min="0">
+            <button onclick="calculateCircleArea(radius)">Calculate</button>
+        </div>
+
+        <div id="TriangleInputs" class="input-container">
+            <label for="triBase">Base:</label>
+            <input type="number" id="triBase" min="0"> <br>
+            <label for="triHeight">Height:</label>
+            <input type="number" id="triHeight" min="0">
+        </div>
+
+        <div id="SquareInputs" class="input-container">
+            <label for="side">Side Length:</label>
+            <input type="number" id="side" min="0">
+        </div>
+
+        <input type="text" list="option">
+        <datalist name="option" id="option" onchange="showInputs()">
+            <option value="Circle"></option>
+            <option value="Triangle"></option>
+            <option value="Square"></option>
+            <option value="Rhombus"></option>
+            <option value="Parallelogram"></option>
+            <option value="Rectangle"> </option>
+            <option value="Trapezoid"></option>
+            <option value="Ellipse"></option>
+            <option value="Polygon"></option>
+            <!-- <option value="Cylinder-Volume"></option>
+            <option value="Cone-Volume"></option>
+            <option value="Sphere-Volume"></option>
+            <option value="Cuboid-Volume"></option>
+            <option value="Cube-Volume"></option>
+            <option value="Pyramid Volume"></option>
+            <option value="Frustum-Volume"></option>
+            <option value="Torus-Volume"></option>
+            <option value="Prism-Volume"></option> -->
+        </datalist>
+    </form>
+
+    <script src="script.js"></script>
+    <script type="module" src="calculations.js"></script>
+</body>
+</html>

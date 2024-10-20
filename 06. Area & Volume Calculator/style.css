@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hide both calculation sections initially */
+#circleArea, #triangleArea {
+    display: none;
+}
+
+.input-container {
+    display: none; /* Hide all input containers by default */
+}

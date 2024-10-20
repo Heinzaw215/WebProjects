@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Hein Htet Zaw">
+    <meta name="description" content="Mini Calculator that performs various calculations including basic math and trigonometry">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-box">
+            <fieldset>
+                <legend>
+                    <h1>Mini Calculator</h1>
+                </legend>
+
+                <!-- Calculation Area-->
+                <input type="text" id="result" readonly> <br>
+
+                <!-- Calculation Buttons -->
+                <div class="button-grid">
+                    <input type="button" value="On/Off" onclick="togglePower()">
+                    <input type="button" value="C" onclick="clearAll()">
+                    <input type="button" value="⌫" onclick="backspace()">
+                    <input type="button" value="%" onclick="display('%')">
+                    
+                    <input type="button" value="7" onclick="display(7)">
+                    <input type="button" value="8" onclick="display(8)">
+                    <input type="button" value="9" onclick="display(9)">
+                    <input type="button" value="÷" onclick="display('/')">
+                    
+                    <input type="button" value="4" onclick="display(4)">
+                    <input type="button" value="5" onclick="display(5)">
+                    <input type="button" value="6" onclick="display(6)">
+                    <input type="button" value="×" onclick="display('*')">
+                    
+                    <input type="button" value="1" onclick="display(1)">
+                    <input type="button" value="2" onclick="display(2)">
+                    <input type="button" value="3" onclick="display(3)">
+                    <input type="button" value="−" onclick="display('-')">
+                    
+                    <input type="button" value="0" onclick="display(0)">
+                    <input type="button" value="." onclick="display('.')">
+                    <input type="button" value="=" onclick="calculate()">
+                    <input type="button" value="+" onclick="display('+')">
+
+                    <input type="button" value="sin" onclick="calculateTrig('sin')">
+                    <input type="button" value="cos" onclick="calculateTrig('cos')">
+                    <input type="button" value="tan" onclick="calculateTrig('tan')">
+                    <input type="button" value="√x" onclick="sqrt()">
+                    
+                    <input type="button" value="^" onclick="display('^')">
+                    <input type="button" value="π" onclick="display(Math.PI)">
+                    <input type="button" value="e" onclick="display(Math.E)">
+                    <input type="button" value="1/x" onclick="inverse()">
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <button id="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
