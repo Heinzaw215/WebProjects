@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Hein Htet Zaw">
+    <meta name="description" content="Calculating the area of different shapes.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Area Calculator</h1>
+
+        <div class="shape-selection">
+            <label for="option">Choose Shape:</label>
+            <select id="option">
+                <option value="Circle">Circle</option>
+                <option value="Triangle">Triangle</option>
+                <option value="Square">Square</option>
+                <option value="Rhombus">Rhombus</option>
+                <option value="Parallelogram">Parallelogram</option>
+                <option value="Rectangle">Rectangle</option>
+                <option value="Trapezoid">Trapezoid</option>
+                <option value="Ellipse">Ellipse</option>
+                <option value="Polygon">Polygon</option>
+            </select>
+        </div>
+
+        <!-- Input Containers -->
+        <div id="Circle-Area" class="input-container">
+            <label for="circleRadius">Radius:</label>
+            <input type="number" id="circleRadius" min="0">
+            <button id="calculateCircle">Calculate Circle Area</button>
+        </div>
+
+        <div id="Triangle-Area" class="input-container">
+            <label for="triBase">Base:</label>
+            <input type="number" id="triBase" min="0">
+            <label for="triHeight">Height:</label>
+            <input type="number" id="triHeight" min="0">
+            <button id="calculateTriangle">Calculate Triangle Area</button>
+        </div>
+        <!-- Add similar input containers for other shapes -->
+
+        <div class="result">
+            <h2>Result: <span id="resultValue"></span></h2>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
