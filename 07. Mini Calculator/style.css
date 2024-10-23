@@ -77,7 +77,7 @@ body.dark-mode .container {
 }
 
 body.dark-mode .calculator-box {
-    background-color: #333;
+    background-color: #111;
 }
 
 body.dark-mode input[type="button"] {

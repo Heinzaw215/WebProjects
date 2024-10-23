@@ -13,6 +13,13 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
 .input-container {
     margin-top: 20px;
     display: none;
@@ -21,7 +28,9 @@ main {
 .result {
     margin-top: 30px;
     font-weight: bold;
+    text-align: center;
 }
+
 
 button {
     margin-top: 10px;
@@ -41,3 +50,4 @@ button:hover {
 .shape-selection {
     margin-bottom: 20px;
 }
+
